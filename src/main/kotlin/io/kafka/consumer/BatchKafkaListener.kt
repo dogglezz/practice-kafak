@@ -14,7 +14,9 @@ class BatchKafkaListener {
 
     @KafkaListener(
         topics = [Topics.PRACTICE_KAFKA_TOPIC],
-        groupId = "batch-kafka-listener"
+        groupId = "batch-kafka-listener",
+        containerFactory = "batchKafkaListenerContainerFactory",
+        concurrency = "1"
     )
     fun batchTopicListener(messages: List<ConsumerRecord<String, String>>) {
         messages.forEach {
