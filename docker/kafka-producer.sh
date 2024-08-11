@@ -1,0 +1,1 @@
+docker compose exec kafka1 kafka-console-producer.sh --broker-list kafka1:19092 --topic $1
