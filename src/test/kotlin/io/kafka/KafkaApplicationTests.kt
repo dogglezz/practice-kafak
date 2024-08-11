@@ -1,10 +1,10 @@
-package io.kakfa
+package io.kafka
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class KakfaApplicationTests {
+class KafkaApplicationTests {
 
     @Test
     fun contextLoads() {
